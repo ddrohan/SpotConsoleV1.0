@@ -13,10 +13,20 @@ public class Driver {
 
     Driver() {
         spot1 = new Spot();
+        float temp;
         display();
         System.out.println("Please Enter xCoord : ");
-        float xValue = input.nextFloat();
-        spot1.xCoord = xValue;
+        temp = input.nextFloat();
+        spot1.xCoord = temp;
+
+        System.out.println("Please Enter yCoord : ");
+        temp = input.nextFloat();
+        spot1.yCoord = temp;
+
+        System.out.println("Please Enter Diameter : ");
+        temp = input.nextFloat();
+        spot1.diameter = temp;
+
         display();
     }
 
